@@ -10,7 +10,7 @@ class TransformToNegative extends Transform {
     callback(null, Buffer.from(String(transformed)))
   }
 }
-const server = http.createServer((res, req) => {
+const server = http.createServer((req, res) => {
   return req
     .pipe( new TransformToNegative() )
     .pipe(res)
