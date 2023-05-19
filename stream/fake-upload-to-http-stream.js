@@ -25,5 +25,6 @@ fetch('http://localhost:3334', {
 }).then(response => {
   return response.text()
 }).then(data => {
+  console.log("fakeUploadStream:")
   console.log(data)
 })

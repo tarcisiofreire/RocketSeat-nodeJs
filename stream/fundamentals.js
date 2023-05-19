@@ -28,6 +28,7 @@ class TransformToNegative extends Transform {
 
 class MultiplyByTenStream extends Writable {
   _write(chunk, encoding, callback) {
+    console.log("Fundamentals:")
     console.log(Number(chunk.toString())*10)
     callback()
   }
